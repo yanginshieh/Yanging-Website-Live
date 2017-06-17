@@ -1,0 +1,1 @@
+jQuery(document).ready(function(a){a.extend(a.lazyLoadXT,{edgeY:image_lazy_load.load,autoInit:!1})});
