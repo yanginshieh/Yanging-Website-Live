@@ -30,11 +30,6 @@ get_header(); ?>
 	                </tr>
 	            </article>
 			<?php endwhile; ?>
-			<?php else: ?>
-				<article>
-				  <h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-				</article>
-			<?php endif; ?>
         </tbody>
       </table>
     </section>
