@@ -5,7 +5,7 @@
 get_header(); ?>
 
 
-<main role="main">
+<main role="main ux-page">
     <button type="button" id="openAll">Expand All</button>
     <button type="button" id="closeButton">Collapse All</button>
     <section>
@@ -21,7 +21,7 @@ get_header(); ?>
 			<?php query_posts('cat=28'); while (have_posts()) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	                <tr class="showHidden">
-	                  <td class="project-header"><div class="indexThumbnail"><?php the_post_thumbnail('homepage-thumb'); ?></div> <div class="stay"><?php the_title(); ?></div></td>
+	                  <td class="project-header"><a href="<?php echo esc_url( get_permalink() ) ?>"><div class="indexThumbnail"><?php the_post_thumbnail('homepage-thumb'); ?></div> <div class="stay"><?php the_title(); ?></div></a></td>
 	                  <td class="category-header"><?php the_field('project_category'); ?></td>
 	                  <td class="year-header"><?php the_field('project_year'); ?></td>
 	                </tr>

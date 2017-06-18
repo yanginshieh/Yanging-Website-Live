@@ -55,4 +55,9 @@ $("#closeButton").click(function(){
     $(".contenttext p").slideUp().hide();
 })
 
+$('.ux-page tr').click( function() {
+    window.location = $(this).find('a').attr('href');
+}).hover( function() {
+    $(this).toggleClass('hover');
+});
 
