@@ -7,8 +7,11 @@
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 		<!-- article -->
+		
 			<?php the_field('project_name'); ?>
 			<?php the_content(); // Dynamic Content ?>
+			
+		<br clear="all">
 		<!-- /article -->
 
 	<?php endwhile; ?>
